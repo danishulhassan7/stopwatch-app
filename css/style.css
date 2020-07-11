@@ -5,20 +5,37 @@
 }
 
 body {
-    background: linear-gradient(to right, #000046, #1cb5e0);
+    background: #020236;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: monospace;
-    margin-top: 15%;
+}
+
+.hero {
+    background-color: teal;
+    color: rgb(243, 242, 242);
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
 }
 
 #container {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
     box-shadow: 0px 2px 4px rgb(7, 6, 6);
     padding: 15px;
     border-radius: 10px;
     background-color: rgb(5, 18, 90);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .screen {
@@ -27,7 +44,7 @@ body {
     color: rgb(241, 238, 238);
     padding: 10px;
     border-radius: 5px;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 900;
 }
 
@@ -48,7 +65,7 @@ body {
     padding: 6px;
     font-weight: 700;
     border-radius: 9px;
-    font-size: 22px;
+    font-size: 20px;
     box-shadow: 0px 3px 5px rgb(133, 44, 216);
     cursor: pointer;
     color: rgb(5, 42, 85);
@@ -58,5 +75,13 @@ body {
 .buttons button:hover {
     background-color: rgb(5, 42, 85);
     color: rgb(107, 212, 246);
-    font-size: 25px;
+    font-size: 23px;
+}
+
+@media (max-width:600px) {
+    #container {
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }

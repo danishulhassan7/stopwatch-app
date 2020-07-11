@@ -89,7 +89,7 @@ class Stopwatch {
         // Render screen
         document.getElementById("minutes").textContent = minutes;
         document.getElementById("seconds").textContent = seconds;
-        document.getElementById("hundredths").textContent = hundredths;
+        document.getElementById("hundreths").textContent = hundredths;
     }
 }
 
